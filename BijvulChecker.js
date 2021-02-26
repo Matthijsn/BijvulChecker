@@ -44,9 +44,9 @@ setTimeout(() => {  GetMB() }, readtimeout*1000);
 }, interval*1000);
 }
 Message = function(){
-audio.play();
-$('.bundle-usage-table').css('background', 'red');
-new Notification('De Bundel is bijna op!', { Title: 'Let op!', Icon: 'https://www.t-mobile.nl/assets/static/t-mobile-logo.svg?v=2018' }).addEventListener('click', function(){
+//audio.play();
+//$('.bundle-usage-table').css('background', 'red');
+new Notification('De Bundel is bijna op!', { Title: 'Let op!', icon: 'https://content.presspage.com/clients/o_206.png' }).addEventListener('click', function(){
     window.open('https://www.t-mobile.nl/my/aanvullers');
 });
 }
