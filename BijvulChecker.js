@@ -1,6 +1,6 @@
 //Variables
 var interval = 40;
-var Empty = 201;
+var Empty = 401;
 var readtimeout = 1;
 var reloadAfter = 18000/interval;
 var count = 0;
@@ -27,7 +27,7 @@ GetMB = function(){
 // Doesn't get the mbs outside the given times
 
 //Use when end time is a bigger digit than the begin time
-//if(currentHour < Begin || currentHour >= Stop){
+//if(currentHour < Begin || currentHour >= Stop)
 
 //Checks if the time is inside the given hours
 if(currentHour < Begin && currentHours > Stop){
