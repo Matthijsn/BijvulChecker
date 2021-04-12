@@ -80,11 +80,17 @@ setTimeout(() => {  GetMB() }, readtimeout*1000);
 Message = function(){
 audio.play();
 //$('.bundle-usage-table').css('background', 'red');
-new Notification('De Bundel is bijna op!', { Title: 'Let op!', icon: 'https://content.presspage.com/clients/o_206.png' }).addEventListener('click', function(){
+new Notification('De Bundel is bijna op!', { body: 'Klik hier om bij te vullen', icon: 'https://content.presspage.com/clients/o_206.png' }).addEventListener('click', function(){
     window.open('https://www.t-mobile.nl/my/aanvullers');
 });
 }
 Start();
+window.onbeforeunload = function() {
+// new Notification('Oeps!', { body: 'De pagina is opnieuw geladen, plak de code opnieuw in de console', icon: 'https://content.presspage.com/clients/o_206.png' }).addEventListener('click', function(){
+//     window.open('');
+// });
+// error.play();
+}
 
 $(window).bind('beforeunload',function(){
 // error.play();
