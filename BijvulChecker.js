@@ -10,6 +10,9 @@ var Begin = 09;
 var Stop = 01;
 var currentHour;
 
+// removes the cooke pop up
+$('#cookiePopup').remove()
+
 //Init audio and notification
 Notification.requestPermission();
 var audio = new Audio("https://cdn.discordapp.com/attachments/651377520406429700/812359200037404752/juntos-607.mp3");
